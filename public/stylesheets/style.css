@@ -1,0 +1,214 @@
+body{
+  background-image: url('/images/image1.jpg');
+  background-size:cover;
+}
+
+.roundThings {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  transform: scale(1.05);
+  border: 3px solid #FFFFFF;
+}
+
+#circleOne {
+  animation: animateOne 12s infinite;
+}
+
+#circleTwo {
+  animation: animateTwo 12s infinite;
+}
+
+#circleThree {
+  animation: animateThree 12s infinite;
+}
+
+#circleFour {
+  animation: animateFour 12s infinite;
+}
+
+#circleCenter {
+  animation: colorchange 2s alternate infinite;
+  animation-duration: 2s;
+}
+
+@keyframes animateOne {
+  from {
+    transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+
+@keyframes animateTwo {
+  from {
+    transform: rotate(0deg) translateX(250px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(250px) rotate(-360deg);
+  }
+}
+
+@keyframes animateThree {
+  from {
+    transform: rotate(0deg) translateX(-250px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(-250px) rotate(-360deg);
+  }
+}
+
+@keyframes animateFour {
+  from {
+    transform: rotate(0deg) translateX(-150px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(-150px) rotate(-360deg);
+  }
+}
+
+@keyframes colorchange {
+  10% {
+    background-color: grey;
+  }
+  25% {
+    background-color: blue;
+  }
+  50% {
+    background-color: green;
+  }
+  75% {
+    background-color: purple;
+  }
+  90% {
+    background-color: pink;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+
+#projects, #about, #education, #social {
+  position: absolute;
+  left: 13px;
+  bottom: 15px;
+  font-family: Helvetica;
+  font-style: bold;
+  font-size: 45px;
+
+}
+
+#circleOne:hover,#circleTwo:hover,
+#circleThree:hover,#circleFour:hover,
+ #projects:hover, #about:hover, #education:hover, #social:hover  {
+  height: 130px;
+  width: 130px;
+  z-index: 1;
+}
+
+/* #circleTwo:hover, #circleThree:hover, #circleFour:hover, #circleOne:hover {
+  width: 110px;
+  height: 110px;
+  border: 5px solid #ccc;
+  animation-play-state: paused;
+} */
+
+/* #circleThree:hover {
+  width: 110px;
+  height: 110px;
+  animation-play-state: paused;
+}
+
+#circleFour:hover {
+  width: 110px;
+  height: 110px;
+  animation-play-state: paused;
+} */
+
+#displayProj{
+  position: absolute;
+  right: 0;
+  background-image: url('/images/image3.jpg');
+  background-size: cover;
+  display:block; 
+  width: 25%;
+  height: 50%;  
+  border: 5px solid black; 
+  border-radius: 20px;
+  color: grey;
+  margin-right: 35px;
+  margin-top: 20px;
+}
+
+#displayAbout{
+  position: absolute;
+  bottom: 0; 
+  right: 0;
+  background-image: url('/images/img6.jpg');
+  background-size: cover;
+  border-radius: 20px;
+  display:block; 
+  width: 25%; 
+  height: 50%;  
+  border: 5px solid black; 
+  color: grey; 
+  margin: 30px;
+  margin-right: 35px;
+  margin-top: 20px;
+}
+#displayEducation{
+  position: absolute;
+  background-image: url('/images/image4.jpg');
+  background-size: auto;
+  border-radius: 20px;
+  display:block; 
+  width: 25%; 
+  height: 50%;  
+  float: bottom;	
+  border: 5px solid black; 
+  color: grey; 
+  margin: 30px;
+
+}
+#displaySocial{
+  position: absolute;
+  bottom: 0; 
+  background-image: url('/images/img5.jpg');
+  background-size: auto;
+  border-radius: 20px;
+  display:block; 
+  width: 25%; 
+  height: 50%;  
+  float: right;	
+  border: 5px solid black; 
+  color: grey;
+  margin: 30px;
+
+}
+
+
+
+#playPause {
+  position: absolute;
+  left: 25px;
+  bottom: 20px;
+  font-size: 50px;
+}
+
+.stopAnimation{
+  animation-iteration-count: '1';
+  animation-fill-mode: 'forwards'
+}
+
+.btn{
+  position: absolute;
+  left: 25px;
+}
