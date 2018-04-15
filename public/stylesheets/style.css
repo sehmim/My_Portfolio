@@ -258,6 +258,20 @@ a {
   animation-timing-function: ease-out;
 }
 
-.git-logo:hover{
+.git-logo:hover {
+  transform: translateY(-3px);
+}
+.logos{
+  width: 250px;
+  height: 250px;
+  border: 2px solid #cccc;
+  border-radius: 50%;
+  box-shadow: azure;
+  margin-left: 50px;
+  margin-top: 130px;
+  animation-timing-function: ease-out;
+}
+
+.logos:hover{
   transform: translateY(-3px);
 }
