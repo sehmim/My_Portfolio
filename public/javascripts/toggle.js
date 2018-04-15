@@ -1,27 +1,13 @@
 let musicOn =true;
 
 let animation_switch = true;
+let infoInDiv = true;
 
+$('.my-wrapper').hide();
 
-
-// const boxOnHover = (circleId) => {
-    
-//     if (animation_switch) {
-//         $(circleId).on('mouseover', () => {
-//             $(this).css({
-//                     'width': '110px',
-//                     'height': '110px',
-//                     'border': '5px solid #ccc'
-    
-//             })
-//         })   
-//     }
-//     else if(!animation_switch){
-
-//     }
-// }
-
-
+const showHideDiv = ()=>{
+    $('.my-wrapper').toggle();
+}
 
 ///// WHEN THE PAUSE BUTTON IS CLICKED //////
 
@@ -47,15 +33,11 @@ const  togglePlay = ()=> {
     }
   };
 
-const pauseMovementGeneral = () =>{
-    togglePlay();
-
-    }
-
+// to prevent default this function is used
 const pauseMovement = ()=>{
     $('#circleCenter').click(()=>{
         event.preventDefault();
-        pauseMovementGeneral();
+        togglePlay();
     })    
 }
 ////////////////////
@@ -79,11 +61,6 @@ const showThisOnhover = (circleId, emoji, divId) => {
 
 // ELEMENTS IN THE DIVS //
 
-// $('#buttonBackOne').hide();
-
-// if (!animation_switch) {
-//     $('#buttonBackOne').show();
-// }
 
 
 
@@ -105,7 +82,9 @@ const popUpDiv = (circleId, divId) =>{
                 height: 600,
             }).css({
                 'z-index' : 3
-            })
+            });
+            $('.my-wrapper').show();
+            $('.page-header').hide();
         }
         // ONCE DIV is BIG, CLICK TO GO AWAY
         div.click(()=>{
@@ -114,8 +93,9 @@ const popUpDiv = (circleId, divId) =>{
             'width': '25%',
             'height': '50%',
             })
-        }) 
-
+        $('.my-wrapper').hide();
+        $('.page-header').show();
+        })
     })
 }
 

@@ -1,6 +1,16 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
 body{
   background-image: url('/images/image1.jpg');
   background-size:cover;
+}
+
+a {
+    text-decoration: none !important;
+    font-weight: 1400 !important;
+    font-size: 20px !important;
 }
 
 .roundThings {
@@ -20,18 +30,25 @@ body{
 
 #circleOne {
   animation: animateOne 12s infinite;
+  animation-timing-function: ease-out;
 }
 
 #circleTwo {
   animation: animateTwo 12s infinite;
+  animation-timing-function: ease-out;
+
 }
 
 #circleThree {
   animation: animateThree 12s infinite;
+  animation-timing-function: ease-out;
+
 }
 
 #circleFour {
   animation: animateFour 12s infinite;
+  animation-timing-function: ease-out;
+
 }
 
 #circleCenter {
@@ -111,6 +128,7 @@ body{
  #projects:hover, #about:hover, #education:hover, #social:hover  {
   height: 130px;
   width: 130px;
+  animation-timing-function: ease-out;
   z-index: 1;
 }
 
@@ -137,8 +155,7 @@ body{
   position: absolute;
   right: 0;
   background-image: url('/images/image3.jpg');
-  background-size: cover;
-  display:block; 
+  background-size: cover; 
   width: 25%;
   height: 50%;  
   border: 5px solid black; 
@@ -166,8 +183,8 @@ body{
 }
 #displayEducation{
   position: absolute;
-  background-image: url('/images/image4.jpg');
-  background-size: auto;
+  background-image: url('/images/image2.jpg');
+  background-size: cover;
   border-radius: 20px;
   display:block; 
   width: 25%; 
@@ -181,8 +198,8 @@ body{
 #displaySocial{
   position: absolute;
   bottom: 0; 
-  background-image: url('/images/img5.jpg');
-  background-size: auto;
+  background-image: url('/images/img7.jpg');
+  background-size: cover;
   border-radius: 20px;
   display:block; 
   width: 25%; 
@@ -211,4 +228,36 @@ body{
 .btn{
   position: absolute;
   left: 25px;
+}
+
+
+.my-wrapper{
+  text-transform: uppercase;
+
+}
+
+.insideDiv{
+  display: inline-block;
+  background-image: linear-gradient(to right bottom, rgba(1, 1, 1, 0.9), rgba(95, 97, 101, 0.9));
+  padding: 10px;
+  margin: 20px;
+  letter-spacing: 5px;
+  border-radius: 5px;
+  margin-left: 50px;
+  font-weight: 700;
+}
+
+.details{
+  margin-top: 10px;
+  letter-spacing: 1.5px;
+}
+.git-logo{
+  width: 140px;
+  height: 140px;
+  margin: 70px;
+  animation-timing-function: ease-out;
+}
+
+.git-logo:hover{
+  transform: translateY(-3px);
 }
