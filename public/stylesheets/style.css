@@ -243,7 +243,6 @@ a {
   margin: 20px;
   letter-spacing: 5px;
   border-radius: 5px;
-  margin-left: 50px;
   font-weight: 700;
 }
 
@@ -254,11 +253,17 @@ a {
 .git-logo{
   width: 140px;
   height: 140px;
-  margin: 70px;
+  margin: 10px;
   animation-timing-function: ease-out;
 }
 
-.git-logo:hover {
+.git-link{
+  width: 20px;
+  height: 20px;
+  
+}
+
+.git-logo:hover  {
   transform: translateY(-3px);
 }
 .logos{
@@ -274,4 +279,31 @@ a {
 
 .logos:hover{
   transform: translateY(-3px);
+}
+
+.mades{
+  position: absolute;
+  right: 40px;
+  font-size: 10px;
+}
+li{
+  margin: 2px;
+}
+
+.under-cons{
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+}
+.mades-campus{
+  font-size: 7.9px;
+}
+
+.jumbotron{
+  opacity: .97;
+}
+
+.img-yorku{
+  width: 400px;
+  height: 150px;;
 }
