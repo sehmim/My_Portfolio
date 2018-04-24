@@ -4,6 +4,7 @@
 
 body{
   background-image: url('/images/image1.jpg');
+  background-repeat: no-repeat;
   background-size:cover;
 }
 
@@ -306,4 +307,22 @@ li{
 .img-yorku{
   width: 400px;
   height: 150px;;
+}
+
+.cu-the-jumpingman{
+  position: absolute;
+  width: 39%;
+  right: -500px;
+}
+
+.icons{
+  position: absolute;
+  right: -500px;
+  bottom: 0px;
+}
+
+.icons-under{
+  width: 50px;
+  height: 50px;
+  margin: 22px;
 }
